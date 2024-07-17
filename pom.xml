@@ -13,6 +13,7 @@
         <maven.compiler.target>19</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <junit.jupiter.version>5.9.1</junit.jupiter.version>
+        <selenium.version>4.22.0</selenium.version> <!-- Update to latest -->
     </properties>
 
     <dependencies>
@@ -37,15 +38,13 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.22.0</version>
+            <version>${selenium.version}</version>
         </dependency>
-        <!-- WebDriverManager Dependency -->
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
             <version>5.9.1</version>
         </dependency>
-
     </dependencies>
 
     <build>
